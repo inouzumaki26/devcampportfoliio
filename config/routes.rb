@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
   resources :portfolios, except: [:show]
   get 'angular-items', to: 'portfolio#angular'
@@ -14,5 +13,5 @@ Rails.application.routes.draw do
     end
   end
   
-  root to: 'pages#about'
+  root to: 'pages#home'
 end
