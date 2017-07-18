@@ -17,6 +17,8 @@ module ApplicationHelper
   end
   
   def copyright_generator
+ #   CobbViewTool::Renderer.copyright 'Tyra Cobb', 'All rights reserved'
     DevcampViewTool::Renderer.copyright 'Tyra Cobb', 'All rights reserved'
+    
   end
 end
