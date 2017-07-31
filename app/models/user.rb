@@ -28,13 +28,3 @@ class User < ApplicationRecord
     self.name.split.last
   end
 end
-
-
-def get_facebook_massages
-  begin
-    contacts_fb.oops
-    @messages = retrieves_messages
-  rescue => e
-    flash[:error] = "Error occured contacting Facebook: #{e}"
-  end
-end
