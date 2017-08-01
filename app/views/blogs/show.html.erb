@@ -7,7 +7,10 @@
   <p>
     <%= @blog.body %>
   </p>
-
+  
+  <%= render 'comments/comments_form' %>
+  
+  <div id="comments">
+    <%= render @blog.comments %>
+  </div>
 </div>
-
-

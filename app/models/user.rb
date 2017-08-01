@@ -14,6 +14,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates_presence_of :name
+  
+  has_many :comments, dependent: :destroy
  
   def first_name
     begin
@@ -24,15 +26,5 @@ class User < ApplicationRecord
   
   def last_name
     self.name.split.last
-  end
-end
-
-
-def get_facebook_massages
-  begin
-    contacts_fb.oops
-    @messages = retrieves_messages
-  rescue => e
-    flash[:error] = "Error occured contacting Facebook: #{e}"
   end
 end
