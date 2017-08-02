@@ -14,16 +14,13 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates_presence_of :name
-  
+
   has_many :comments, dependent: :destroy
- 
+
   def first_name
-    begin
-      self.name.split.first.oops
-    rescue
-    end
+    self.name.split.first
   end
-  
+
   def last_name
     self.name.split.last
   end
