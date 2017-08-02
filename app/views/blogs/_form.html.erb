@@ -16,6 +16,18 @@
   </div>
   
   <div class="form-group">
+    <%= f.label :topic_id %>
+    <%= f.collection_selection(:topic_id, Topic.all, :id, :title,
+                                {
+                                  selected: blog.topic.id,
+                                  include_blank: true
+                                },
+                                class: 'form-control'
+                              )
+    %>
+  </div>
+  
+  <div class="form-group">
     <%= f.text_area :body, class: 'form-control', rows: 15, value: 'Content' %>
   </div>
   
