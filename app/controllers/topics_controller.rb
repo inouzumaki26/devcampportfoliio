@@ -1,13 +1,13 @@
 class TopicsController < ApplicationController
-  Layout 'blog'
+  layout 'blog'
   
   def index
     @topics = Topic.all
   end
 
   def show
-    @topics = Topic.find(params[:id])
-    
+    @topic = Topic.find(params[:id])
+  
     if logged_in?(:site_admin)
       @blogs = @topic.blogs.recent.page(params[:page]).per(5)
     else
