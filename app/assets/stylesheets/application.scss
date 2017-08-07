@@ -30,6 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 body {
   color: #fff;
@@ -216,12 +217,18 @@ h6, .h6 {
 }
 
 .app-footer {
-  color: white;
+  color: black;
 }
 
 .app-card-container {
   color: black;
   text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+  width: 50em;
+  height: 30em;
 }
 
 .profile-img {

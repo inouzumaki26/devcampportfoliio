@@ -2,8 +2,19 @@
 @import "jquery-ui";
 @import "gritter";
 
+@font-face {
+  font-family: 'Lato';
+  src:font-url('Lato-Regualr.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:font-url('Lato-Regualr.ttf');
+}
+
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Lato';
 }
 
 .navbar {
@@ -35,6 +46,7 @@ body {
   padding-bottom: 3rem;
   background-color: #f7f7f7;
 }
+
 
 .card {
   float: left;
