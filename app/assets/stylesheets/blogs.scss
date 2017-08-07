@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
+@import "gritter";
 
 /*
  * Globals
@@ -191,7 +192,9 @@ h6, .h6 {
   margin: 0px 10px 0px 10px;
 }
 
-
+.blog-nav {
+  margin-bottom: 30px;
+}
 
 
 
