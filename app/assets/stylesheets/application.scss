@@ -224,14 +224,15 @@ h6, .h6 {
   text-align: left;
 }
 
-.app-card-container > .card {
-  padding: 20px;
-}
-
 .profile-img {
   border: 1px solid grey;
 }
 
 .app-card-container a {
   color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
