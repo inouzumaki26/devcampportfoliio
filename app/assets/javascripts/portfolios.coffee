@@ -25,6 +25,4 @@ ready = ->
     return
   return
   
-  return
-  
 $(document).ready ready
